@@ -1,0 +1,77 @@
+<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>да это же плод моей крови и пота)))00)00</title>
+  <base href="/">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<app-root></app-root>
+<script>
+    function clock(){
+    var date = new Date()
+    hours = (date.getHours() < 10) ? '0' + date.getHours() : date.getHours(),
+    minutes = (date.getMinutes() < 10) ? '0' + date.getMinutes() : date.getMinutes(),
+    seconds = (date.getSeconds() < 10) ? '0' + date.getSeconds() : date.getSeconds();
+    document.getElementById('clock').innerHTML = hours + ':' + minutes ;
+    }
+    setInterval(clock, 1000);
+    clock();
+</script>
+<script>
+function draw(docum){
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+
+  var doc = '<idf0><с1 Name="Средства контроля"><c1_1>ГОСТы</c1_1><c1_2>ТЗ</c1_2><c1_3>Политика компании</c1_3></с1><o1>Завершенный проект</o1><l1>Проект который нужно выполнить</l1><p1 Name="Команда разработки"><p1_1>Контент-менеджер</p1_1><p1_2>Web-разработчик</p1_2></p1><m1 Name="Инструменты web-разработки"><m1_1>IDE</m1_1><m1_2>Figma</m1_2></m1><f1><l1><l1_1 Name="Заявка от фирмы" input="null"></l1_1><l1_2 Name="Данные с сайта" input="null"></l1_2></l1><с1 Name="Средства контроля"><c1_1>ГОСТы</c1_1><c1_2>ТЗ</c1_2><c1_3>Политика компании</c1_3></с1><p1 Name="Команда разработки"><p1_1>Контент-менеджер</p1_1><p1_2>Web-разработчик</p1_2></p1><o1></o1></f1><f2></f2><l1><l1_1 Name="Разработанный макет" input="f1"></l1_1><l1_2 Name="Данные с сайта" input="null"></l1_2></l1><с1 Name="Средства контроля"><c1_1>ГОСТы</c1_1><c1_2>ТЗ</c1_2><c1_3>Политика компании</c1_3></с1><p1 Name="Команда разработки"><p1_1>Контент-менеджер</p1_1><p1_2>Web-разработчик</p1_2></p1><o1></o1><f3><l1><l1_1 Name="Программные коды" input="f3"></l1_1><l1_2 Name="Информация о продукте" input="null"></l1_2></l1><с1 Name="Средства контроля"><c1_1>ГОСТы</c1_1><c1_2>ТЗ</c1_2><c1_3>Политика компании</c1_3></с1><p1 Name="Команда разработки"><p1_1>Контент-менеджер</p1_1><p1_2>Web-разработчик</p1_2></p1><o1>Завершенный проект</o1></f3></idf0>';//Сюда пихаем из файла данные
+  if (window.DOMParser) //хуй знае что такое ,но как поняли это парсинг ,взяли с стакоферфло
+  {
+      parser = new DOMParser();
+      xmlDoc = parser.parseFromString(doc, "text/xml");
+  }
+  else // Internet Explorer
+  {
+      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc.async = false;
+      xmlDoc.loadXML(doc);
+  }
+
+  var p1 = xmlDoc.getElementsByTagName("p1")[0].getAttribute("Name");//вытягиваем общее имя для всех "Людей" тип p1 уровня
+  ctx.beginPath(); //рисуем главное окошко p1
+  ctx.rect(160, 10, 100, 40);
+  ctx.fillText(p1, 160, (40+10)/2);
+  ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+  ctx.stroke();
+  ctx.closePath();
+
+  var x = xmlDoc.getElementsByTagName("p1")[0].childNodes;//вытягивает дочернии элементы у p1 уровня виду p1_1 p1_2 и тд
+  var  txt = "";//для теста
+
+  var width = 160/(x.length/2) // высчитываем расстояние между квадратиками  160- это х у главного квадратика
+  var x1=width/2//начальная точка квадратика
+  var y1=width
+
+  for (i = 0; i < x.length; i++) {
+          txt += x[i].childNodes[0].nodeValue;//вытягиваем значения еще дочерних классов p1_1 (типо что в них хранятся,как раз наши названия)
+          ctx.beginPath(); //рисуем каждый под уровень p1
+  	ctx.rect(x1, 100, y1, 40);
+  	ctx.fillText(x[i].childNodes[0].nodeValue, x1, 100+10);//текст
+  	ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+  	ctx.moveTo(x1+y1/2, 100 ); //линия центра каждого квадратика от х и y=100
+  	ctx.lineTo( 210, 50 );//160 и 100/2 от главного квадратика
+  	ctx.stroke();
+  	ctx.closePath();//рисуем каждый квадратик
+  	x1+=width+10
+
+      }
+
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</html>
