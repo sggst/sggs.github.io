@@ -78,7 +78,7 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 44, vars: 0, consts: [["id", "navbarHeader", 1, "collapse", "bg-dark"], [1, "container"], [1, "row"], [1, "col-sm-8", "col-md-7", "py-4"], [1, "text-white"], [1, "text-muted"], [1, "col-sm-4", "offset-md-1", "py-4"], [1, "list-unstyled"], ["href", "https://github.com/sggst", "target", "_blank", 1, "text-white"], [1, "navbar", "navbar-dark", "bg-dark", "box-shadow"], [1, "container", "d-flex"], ["routerLink", "/", 1, "navbar-brand", "d-flex", "align-items-center", "mr-auto", "p-2"], [1, "dropdown", "pl-5", "pr-5"], ["type", "button", "data-toggle", "dropdown", 1, "btn", "btn-primary", "dropdown-toggle"], [1, "dropdown-menu"], ["routerLink", "/lab1", 1, "dropdown-item"], ["routerLink", "/lab2", 1, "dropdown-item"], ["routerLink", "/lab3", 1, "dropdown-item"], ["routerLink", "/lab4", 1, "dropdown-item"], ["routerLink", "/ftu", 1, "dropdown-item"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarHeader", "aria-controls", "navbarHeader", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], [1, "pl-5", "pr-5"], [2, "color", "#9b9ea1", "font-size", "14pt", "border", "0.15px solid #6d7176", "background", "#343a40", "padding", "5px"], ["id", "clock"], ["role", "main"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 44, vars: 0, consts: [["id", "navbarHeader", 1, "collapse", "bg-dark"], [1, "container"], [1, "row"], [1, "col-sm-8", "col-md-7", "py-4"], [1, "text-white"], [1, "text-muted"], [1, "col-sm-4", "offset-md-1", "py-4"], [1, "list-unstyled"], ["href", "https://github.com/sggst/sggst.github.io/", "target", "_blank", 1, "text-white"], [1, "navbar", "navbar-dark", "bg-dark", "box-shadow"], [1, "container", "d-flex"], ["routerLink", "/", 1, "navbar-brand", "d-flex", "align-items-center", "mr-auto", "p-2"], [1, "dropdown", "pl-5", "pr-5"], ["type", "button", "data-toggle", "dropdown", 1, "btn", "btn-primary", "dropdown-toggle"], [1, "dropdown-menu"], ["routerLink", "/lab1", 1, "dropdown-item"], ["routerLink", "/lab2", 1, "dropdown-item"], ["routerLink", "/lab3", 1, "dropdown-item"], ["routerLink", "/lab4", 1, "dropdown-item"], ["href", "https://sggst.github.io/test.github.io/", 1, "dropdown-item"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarHeader", "aria-controls", "navbarHeader", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], [1, "pl-5", "pr-5"], [2, "color", "#9b9ea1", "font-size", "14pt", "border", "0.15px solid #6d7176", "background", "#343a40", "padding", "5px"], ["id", "clock"], ["role", "main"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
@@ -185,8 +185,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_lab2_lab2_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/lab2/lab2.component */ "./src/app/components/lab2/lab2.component.ts");
 /* harmony import */ var _components_lab3_lab3_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/lab3/lab3.component */ "./src/app/components/lab3/lab3.component.ts");
 /* harmony import */ var _components_lab4_lab4_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/lab4/lab4.component */ "./src/app/components/lab4/lab4.component.ts");
-/* harmony import */ var _components_flowtouml_flowtouml_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/flowtouml/flowtouml.component */ "./src/app/components/flowtouml/flowtouml.component.ts");
-
 
 
 
@@ -204,8 +202,7 @@ const appRoutes = [
     { path: 'lab1', component: _components_lab1_lab1_component__WEBPACK_IMPORTED_MODULE_5__["Lab1Component"] },
     { path: 'lab2', component: _components_lab2_lab2_component__WEBPACK_IMPORTED_MODULE_7__["Lab2Component"] },
     { path: 'lab3', component: _components_lab3_lab3_component__WEBPACK_IMPORTED_MODULE_8__["Lab3Component"] },
-    { path: 'lab4', component: _components_lab4_lab4_component__WEBPACK_IMPORTED_MODULE_9__["Lab4Component"] },
-    { path: 'ftu', component: _components_flowtouml_flowtouml_component__WEBPACK_IMPORTED_MODULE_10__["FlowtoumlComponent"] }
+    { path: 'lab4', component: _components_lab4_lab4_component__WEBPACK_IMPORTED_MODULE_9__["Lab4Component"] }
 ];
 class AppModule {
 }
@@ -220,8 +217,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _components_main_main_component__WEBPACK_IMPORTED_MODULE_6__["MainComponent"],
         _components_lab2_lab2_component__WEBPACK_IMPORTED_MODULE_7__["Lab2Component"],
         _components_lab3_lab3_component__WEBPACK_IMPORTED_MODULE_8__["Lab3Component"],
-        _components_lab4_lab4_component__WEBPACK_IMPORTED_MODULE_9__["Lab4Component"],
-        _components_flowtouml_flowtouml_component__WEBPACK_IMPORTED_MODULE_10__["FlowtoumlComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _components_lab4_lab4_component__WEBPACK_IMPORTED_MODULE_9__["Lab4Component"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
@@ -232,8 +228,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _components_main_main_component__WEBPACK_IMPORTED_MODULE_6__["MainComponent"],
                     _components_lab2_lab2_component__WEBPACK_IMPORTED_MODULE_7__["Lab2Component"],
                     _components_lab3_lab3_component__WEBPACK_IMPORTED_MODULE_8__["Lab3Component"],
-                    _components_lab4_lab4_component__WEBPACK_IMPORTED_MODULE_9__["Lab4Component"],
-                    _components_flowtouml_flowtouml_component__WEBPACK_IMPORTED_MODULE_10__["FlowtoumlComponent"]
+                    _components_lab4_lab4_component__WEBPACK_IMPORTED_MODULE_9__["Lab4Component"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -244,67 +239,6 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
             }]
     }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./src/app/components/flowtouml/flowtouml.component.ts":
-/*!*************************************************************!*\
-  !*** ./src/app/components/flowtouml/flowtouml.component.ts ***!
-  \*************************************************************/
-/*! exports provided: FlowtoumlComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlowtoumlComponent", function() { return FlowtoumlComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-
-
-class FlowtoumlComponent {
-    constructor() {
-    }
-    ngOnInit() {
-    }
-    onFileSelected(event) {
-        console.log(event);
-        this.selfile = event.target.files[0];
-        console.log(this.selfile);
-    }
-}
-FlowtoumlComponent.ɵfac = function FlowtoumlComponent_Factory(t) { return new (t || FlowtoumlComponent)(); };
-FlowtoumlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FlowtoumlComponent, selectors: [["app-flowtouml"]], decls: 12, vars: 0, consts: [["onload", "draw();", 1, "ftu", "text-center"], [1, "container", "ftu", "d-flex", "h-100"], ["role", "main", 1, "row", "justify-content-center", "align-self-center"], [1, "cover-heading", "text-dark"], [1, "lead", "pt-3"], ["type", "file", 2, "display", "none", 3, "change"], ["fileInput", ""], [1, "btn", "btn-lg", "btn-outline-dark", 3, "click"], [1, "container"], ["id", "myCanvas", "width", "480", "height", "320"]], template: function FlowtoumlComponent_Template(rf, ctx) { if (rf & 1) {
-        const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "body", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "main", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h3", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C \u043F\u043E\u0442\u043E\u043A\u043E\u0432 (flow) P1, P1_1, P1_2, P1_3 \u043A \u0432\u0438\u0434\u0443 \u0434\u0438\u0430\u0433\u0440\u0430\u043C\u043C\u044B \u043A\u043B\u0430\u0441\u0441\u043E\u0432 UML (\u0441 \u043D\u0430\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435\u043C)");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "input", 5, 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function FlowtoumlComponent_Template_input_change_6_listener($event) { return ctx.onFileSelected($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function FlowtoumlComponent_Template_button_click_8_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](7); return _r0.click(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u0442\u044C");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "canvas", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: ["canvas[_ngcontent-%COMP%] { background: #eee; display: block; margin: 0 auto; }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9mbG93dG91bWwvZmxvd3RvdW1sLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsU0FBUyxnQkFBZ0IsRUFBRSxjQUFjLEVBQUUsY0FBYyxFQUFFIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9mbG93dG91bWwvZmxvd3RvdW1sLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJjYW52YXMgeyBiYWNrZ3JvdW5kOiAjZWVlOyBkaXNwbGF5OiBibG9jazsgbWFyZ2luOiAwIGF1dG87IH1cclxuIl19 */"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FlowtoumlComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'app-flowtouml',
-                templateUrl: './flowtouml.component.html',
-                styleUrls: ['./flowtouml.component.css']
-            }]
-    }], function () { return []; }, null); })();
 
 
 /***/ }),
